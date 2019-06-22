@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #f9f9f9;
+}
+
+#name-container {
+    /*!* Positioning *!*/
+    /*position: absolute;*/
+    /*top: 40%;*/
+    /*left: 15%;*/
+
+    /*height: 200px;*/
+
+    display: block;
+    margin-top: 30vh;
+    margin-left: 15vw;
+}
+
+#name {
+    font-family: Georgia, Arial, sans-serif;
+    font-size: 4rem;
+    color: #555555;
+    display: inline-block;
+
+    /*!* Border Left *!*/
+    /*padding-left: 30px;*/
+    /*border-left: 5px solid #555555;*/
+    padding-left: 35px;
+}
+
+#sub {
+    font-family: Arial, sans-serif;
+    color: #6b6b6b;
+    font-size: 1.2rem;
+    margin-left: 35px;
+
+    display: block;
+    margin-top: 5px;
+}
+
+#social-container {
+    color: #939393;
+    font-size: 2rem;
+    display: block;
+    margin-top: 20px;
+    margin-left: calc(15vw + 35px);
+}
+
+#social-container > a:hover {
+    color: #555555;
+    cursor: pointer;
+}
+
+#social-container > a {
+    color: inherit;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+
