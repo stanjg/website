@@ -2,8 +2,28 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: #f9f9f9;
     max-height: 100vh;
+    min-height: 100vh;
+
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+html {
+    background: #f9f9f9;
+    background-image:
+            url('../img/curve.svg'),
+            url('../img/stripes.svg');
+    background-repeat:
+            no-repeat,
+            no-repeat;
+    background-position:
+            bottom right,
+            90% 0%;
+    background-size:
+            50%,
+            32%;
 }
 
 #name-container {
@@ -47,6 +67,14 @@ body, html {
     text-decoration: none;
 }
 
+@media (max-width: 1300px) {
+    html {
+        background-size:
+                70%,
+                50%;
+    }
+}
+
 @media (max-width: 900px) {
     #name-container, #social-container {
         margin-left: 8vw;
@@ -65,7 +93,10 @@ body, html {
         bottom: 5%;
     }
 
-    #social-container > a {
+    html {
+        background-size:
+                0,
+                120% !important;
 
     }
 }
