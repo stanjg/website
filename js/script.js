@@ -1,10 +1,19 @@
+function resetName() {
+    new TypeIt('#name', {
+        strings: 'Stan Gabes',
+        speed: 30,
+        waitUntilVisible: true
+    }).go();
+}
+
 $(document).ready(function () {
     $('#name').text('');
 
     new TypeIt('#name', {
         strings: 'Stan Gabes',
         speed: 30,
-        waitUntilVisible: true
+        waitUntilVisible: true,
+        breakLines: true
     }).go();
 
     $('#instagram').hover(function () {
@@ -14,11 +23,7 @@ $(document).ready(function () {
             waitUntilVisible: true
         }).go();
     }, function () {
-        new TypeIt('#name', {
-            strings: 'Stan Gabes',
-            speed: 30,
-            waitUntilVisible: true
-        }).go();
+        resetName();
     });
 
     $('#discord').hover(function () {
@@ -28,11 +33,7 @@ $(document).ready(function () {
             waitUntilVisible: true
         }).go();
     }, function () {
-        new TypeIt('#name', {
-            strings: 'Stan Gabes',
-            speed: 30,
-            waitUntilVisible: true
-        }).go();
+        resetName();
     });
 
     $('#email').hover(function () {
@@ -42,11 +43,7 @@ $(document).ready(function () {
             waitUntilVisible: true
         }).go();
     }, function () {
-        new TypeIt('#name', {
-            strings: 'Stan Gabes',
-            speed: 30,
-            waitUntilVisible: true
-        }).go();
+        resetName();
     });
 
     $('#github').hover(function () {
@@ -56,10 +53,6 @@ $(document).ready(function () {
             waitUntilVisible: true
         }).go();
     }, function () {
-        new TypeIt('#name', {
-            strings: 'Stan Gabes',
-            speed: 30,
-            waitUntilVisible: true
-        }).go();
+        resetName();
     });
 });
